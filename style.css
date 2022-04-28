@@ -1,3 +1,5 @@
+/* PAGE */
+
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('font/Raleway-Regular.ttf');
@@ -24,13 +26,18 @@ main {
 
 a {
     text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
-/* Header */
+/* PAGE */
+
+/* HEADER */
 
 .header {
     display: flex;
     justify-content: space-between;
+    max-width: 1355px;
 }
 
 .header_img {
@@ -69,7 +76,9 @@ a {
     border-top: 4px solid #0065FC;
 }
 
-/* Search */
+/* HEADER */
+
+/* SEARCH */
 
 .search_header {
     display: flex;
@@ -79,15 +88,16 @@ a {
 .search_header_title {
     font-family: 'Raleway-Bold';
     font-size: 30px;
-    line-height: 5px;
+    margin: 0px;
 }
 
 .search_header_subtitle {
     padding-bottom: 10px;
-    line-height: 11px;
 }
 
-/* Form */
+/* SEARCH */
+
+/* FORM */
 
 .search_form {
     display: flex;
@@ -123,12 +133,14 @@ a {
     cursor: pointer;
 }
 
-/* Filters */
+/* FORM */
+
+/* FILTERS */
 
 .search_filters {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin: 0px;
 }
 
 .search_filters_title {
@@ -169,7 +181,9 @@ a {
     font-family: 'Raleway-Bold';
 }
 
-/* Search result */
+/* FILTERS */
+
+/* SEARCH RESULT */
 
 .search_result {
     display: flex;
@@ -188,4 +202,190 @@ a {
 
 .search_result_text {
     padding-left: 10px;
+}
+
+/* SEARCH RESULT */
+
+/* HOSTING */
+
+.hosting {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1355px;
+}
+
+/* HOSTING MAIN */
+
+.hosting_main {
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    max-width: 900px;
+    min-width: 600px;
+    margin: 20px 10px 20px 0px;
+    flex: 1;
+}
+
+.hosting_main_header_title {
+    margin: 30px;
+}
+
+.hosting_main_header_title, .hosting_main_card_fig_caption_title, .hosting_main_card_from_price, .hosting_main_card_footer {
+    font-family: 'Raleway-Bold';
+}
+
+.hosting_main_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hosting_main_card {
+    display: flex;
+    align-items: stretch;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 5px;
+    margin: 0px 20px 40px 20px;
+    min-width: 60px;
+    transition: transform 250ms ease-in-out;
+}
+
+.hosting_main_card:hover {
+    transform: scale(1.05);
+}
+
+.hosting_main_card_fig {
+    margin: 0px;
+}
+
+.hosting_main_card_fig_img {
+    height: 130px;
+    max-height: 100%;
+    width: 250px;
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.hosting_main_card_fig_caption_title {
+    font-size: 16px;
+}
+
+.hosting_main_card_fig_caption_title, .hosting_main_card_from, .hosting_main_card_stars {
+    padding-left: 10px;
+}
+
+.hosting_main_card_from {
+    font-size: 14px;
+}
+
+.hosting_main_card_stars {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.hosting_main_card_footer {
+    margin: 0px 30px 30px 30px;
+}
+
+/* HOSTING MAIN */
+
+/* HOSTING POPULAR */
+
+.hosting_popular {
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    margin: 20px 0px 20px 10px;
+    width: 415px;
+    max-height: 660px;
+}
+
+.hosting_popular_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hosting_popular_header_title, .hosting_popular_card_desc_title, .hosting_popular_card_from_price {
+    font-family: 'Raleway-Bold';
+}
+
+.hosting_popular_header_title, .hosting_popular_header_icon {
+    margin: 30px;
+}
+
+.hosting_popular_header_icon {
+    font-size: 20px;
+}
+
+.hosting_popular_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hosting_popular_card {
+    display: flex;
+    align-items: stretch;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    box-sizing: border-box;
+    line-height: 5px;
+    margin: 0px 20px 40px 15px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 350px;
+    height: 155px;
+    transition: transform 250ms ease-in-out;
+}
+
+.hosting_popular_card:hover {
+    transform: scale(1.05);
+}
+
+.hosting_popular_card_fig {
+    margin: 0px;
+}
+
+.hosting_popular_card_img {
+    height: 100%;
+    max-height: 100%;
+    width: 135px;
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.hosting_popular_card_desc {
+    line-height: 20px;
+    padding: 0px 10px 10px 10px;
+}
+
+.hosting_popular_card_desc_title {
+    font-size: 16px;
+}
+
+.hosting_popular_card_desc_title, .hosting_popular_card_from, .hosting_popular_card_stars {
+    margin: 10px;
+}
+
+.hosting_popular_card_from {
+    font-size: 14px;
+}
+
+.hosting_popular_card_stars {
+    font-size: 12px;
+    padding-top: 35px;
 }
