@@ -2,4 +2,4 @@
 
 Mise en place du Projet 2 de la formation OpenClassRooms
 
--> Création du "Header" et du "Formulaire"
+--> Création du "Header" et du "Formulaire"
