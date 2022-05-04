@@ -11,7 +11,8 @@
 }
 
 html {
-    max-width: 98%;
+    min-width: 1200px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -21,13 +22,24 @@ body {
 }
 
 main {
-    padding-left: 15px;
+    padding: 0px 15px 0px 15px;
+}
+
+a, button {
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
     color: black;
-    cursor: pointer;
+}
+
+button {
+    border: none;
+}
+
+.Raleway_bold {
+    font-family: 'Raleway-Bold';
 }
 
 /* PAGE */
@@ -37,7 +49,6 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1355px;
 }
 
 .header_img {
@@ -60,12 +71,12 @@ a {
     font-weight: 500;
 }
 
-.header_nav_link[data-active=true] {
+.header_nav_link_hosting {
     color: #0065FC;
     border-top: 4px solid #0065FC;
 }
 
-.header_nav_link[data-active=false] {
+.header_nav_link_activity {
     color: black;
     border-top: 4px solid transparent;
 }
@@ -86,7 +97,6 @@ a {
 }
 
 .search_header_title {
-    font-family: 'Raleway-Bold';
     font-size: 30px;
     margin: 0px;
 }
@@ -126,7 +136,6 @@ a {
 .search_form_submitinput {
     color: white;
     background-color: #0065FC;
-    border: none;
     border-radius: 0px 15px 15px 0px;
     width: 200px;
     font-size: 17px;
@@ -145,7 +154,6 @@ a {
 
 .search_filters_title {
     padding-right: 15px;
-    font-family: 'Raleway-Bold';
 }
 
 .search_filters_filter {
@@ -154,8 +162,6 @@ a {
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    max-width: 300px;
-    max-height: 50px;
     margin: 20px 15px;
     cursor: pointer;
     transition: transform 250ms ease-in-out;
@@ -173,12 +179,12 @@ a {
     min-height: 50px;
     background-color: #DEEBFF;
     border-radius: 50px;
-    margin: -3px;
+    margin: -1px;
 }
 
 .search_filters_filter_title {
-    padding : 20px;
-    font-family: 'Raleway-Bold';
+    background-color: transparent;
+    padding: 5px 20px;
 }
 
 /* FILTERS */
@@ -210,89 +216,110 @@ a {
 
 .hosting {
     display: flex;
-    justify-content: space-around;
-    max-width: 1355px;
+    flex-direction: row;
+}
+
+.hosting_background {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+}
+
+.hosting_title, .hosting_popular_header_icon {
+    margin: 30px 30px 20px 30px;
+}
+
+.hosting_card {
+    padding: 5px;
+    margin: 15px 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    box-sizing: border-box;
+    transition: transform 250ms ease-in-out;
+}
+
+.hosting_card:hover {
+    transform: scale(1.05);
+}
+
+.hosting_card_fig {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.hosting_card_fig_img {
+    object-fit: cover;
+}
+
+.hosting_card_fig_caption {
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.hosting_card_fig_caption_title {
+    font-size: 16px;
+}
+
+.hosting_card_from {
+    font-size: 14px;
+}
+
+.hosting_card_fig_caption_space {
+    flex: 2;
+}
+
+.hosting_card_stars {
+    font-size: 12px;
+}
+
+.hosting_card_star_on, .search_filter_icon {
+    color: #0065FC;
+}
+
+.hosting_card_star_off {
+    color: #dcdcdc;
+}
+
+.hosting_card_fig_caption_title, .hosting_card_from, .hosting_card_stars {
+    margin: 0px;
+    padding-left: 5px;
 }
 
 /* HOSTING MAIN */
 
 .hosting_main {
-    background-color: #F2F2F2;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
-    max-width: 900px;
-    min-width: 600px;
     margin: 20px 10px 20px 0px;
-    flex: 1;
-}
-
-.hosting_main_header_title {
-    margin: 30px;
-}
-
-.hosting_main_header_title, .hosting_main_card_fig_caption_title, .hosting_main_card_from_price, .hosting_main_card_footer {
-    font-family: 'Raleway-Bold';
+    flex: 2;
 }
 
 .hosting_main_cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
 }
 
 .hosting_main_card {
-    display: flex;
-    align-items: stretch;
-    padding: 3px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    box-sizing: border-box;
-    height: 100%;
-    line-height: 5px;
-    margin: 0px 20px 40px 20px;
-    min-width: 60px;
-    transition: transform 250ms ease-in-out;
-}
-
-.hosting_main_card:hover {
-    transform: scale(1.05);
-}
-
-.hosting_main_card_fig {
-    margin: 0px;
+    width: 29%;
+    height: auto;
 }
 
 .hosting_main_card_fig_img {
-    height: 130px;
-    max-height: 100%;
-    width: 250px;
-    max-width: 100%;
-    border: 1px solid white;
     border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
-
-.hosting_main_card_fig_caption_title {
-    font-size: 16px;
-}
-
-.hosting_main_card_fig_caption_title, .hosting_main_card_from, .hosting_main_card_stars {
-    padding-left: 10px;
-}
-
-.hosting_main_card_from {
-    font-size: 14px;
-}
-
-.hosting_main_card_stars {
-    font-size: 12px;
-    padding-bottom: 10px;
+    width: 100%;
+    height: 125px;
 }
 
 .hosting_main_card_footer {
-    margin: 0px 30px 30px 30px;
+    margin: 15px 0px 30px 30px;
+}
+
+.hosting_main_card_footer_link:hover {
+    color: #0065FC;
+    text-decoration: underline;
 }
 
 /* HOSTING MAIN */
@@ -300,12 +327,8 @@ a {
 /* HOSTING POPULAR */
 
 .hosting_popular {
-    background-color: #F2F2F2;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
     margin: 20px 0px 20px 10px;
-    width: 415px;
-    max-height: 660px;
+    flex: 1;
 }
 
 .hosting_popular_header {
@@ -314,78 +337,33 @@ a {
     align-items: center;
 }
 
-.hosting_popular_header_title, .hosting_popular_card_desc_title, .hosting_popular_card_from_price {
-    font-family: 'Raleway-Bold';
-}
-
-.hosting_popular_header_title, .hosting_popular_header_icon {
-    margin: 30px;
-}
-
 .hosting_popular_header_icon {
     font-size: 20px;
 }
 
 .hosting_popular_cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .hosting_popular_card {
-    display: flex;
-    align-items: stretch;
-    padding: 3px;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
-    box-sizing: border-box;
-    line-height: 5px;
-    margin: 0px 20px 40px 15px;
-    width: 100%;
-    max-width: 350px;
-    min-width: 350px;
-    height: 155px;
-    transition: transform 250ms ease-in-out;
-}
-
-.hosting_popular_card:hover {
-    transform: scale(1.05);
+    width: 90%;
+    height: auto;
 }
 
 .hosting_popular_card_fig {
-    margin: 0px;
+    display: flex;
 }
 
-.hosting_popular_card_img {
-    height: 100%;
-    max-height: 100%;
-    width: 135px;
-    max-width: 100%;
-    border: 1px solid white;
+.hosting_popular_card_fig_img {
     border-radius: 20px 0px 0px 20px;
-    object-fit: cover;
+    width: 40%;
+    min-width: 40%;
+    height: 145px;
 }
 
-.hosting_popular_card_desc {
-    line-height: 20px;
-    padding: 0px 10px 10px 10px;
-}
+/* HOSTING POPULAR */
 
-.hosting_popular_card_desc_title {
-    font-size: 16px;
-}
-
-.hosting_popular_card_desc_title, .hosting_popular_card_from, .hosting_popular_card_stars {
-    margin: 10px;
-}
-
-.hosting_popular_card_from {
-    font-size: 14px;
-}
-
-.hosting_popular_card_stars {
-    font-size: 12px;
-    padding-top: 35px;
-}
+/* HOSTING */
