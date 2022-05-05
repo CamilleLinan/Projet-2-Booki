@@ -1,5 +1,5 @@
 # Projet-2-v1
 
---> Suppression des images inutilisées ;
+--> Ajout du footer ;
 
---> Ajout de la partie "Activités".
+--> Ajout des points d'ancrage pour "hosting" et "activity".
