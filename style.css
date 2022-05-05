@@ -38,6 +38,10 @@ button {
     border: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 .Raleway_bold {
     font-family: 'Raleway-Bold';
 }
@@ -217,6 +221,7 @@ button {
 .hosting {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .hosting_background {
@@ -291,7 +296,7 @@ button {
 /* HOSTING MAIN */
 
 .hosting_main {
-    margin: 20px 10px 20px 0px;
+    margin: 20px 15px 20px 0px;
     flex: 2;
 }
 
@@ -327,7 +332,7 @@ button {
 /* HOSTING POPULAR */
 
 .hosting_popular {
-    margin: 20px 0px 20px 10px;
+    margin: 20px 0px 20px 15px;
     flex: 1;
 }
 
@@ -371,7 +376,8 @@ button {
 /* ACTIVITY */
 
 .activity {
-    margin-top: 60px;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
 }
 
 .activity_header {
@@ -389,6 +395,11 @@ button {
     height: auto;
     box-shadow: 0 0 16px #0000001f;
     overflow: hidden;
+    transition: transform 250ms ease-in-out;
+}
+
+.activity_card:hover {
+    transform: scale(1.05);
 }
 
 .activity_card_fig {
@@ -437,3 +448,35 @@ button {
 }
 
 /* ACTIVITY */
+
+/* FOOTER */
+
+.footer {
+    background-color: #F2F2F2;
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+.footer_main {
+    display: flex;
+    padding: 20px 0px 5px 15px; 
+}
+
+.footer_main_container {
+    margin-left: 30px;
+}
+
+.footer_main_title {
+    margin: 0px;
+    padding-left: 40px;
+    font-size: 14px;
+}
+
+.footer_main_list {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.footer_main_list li:hover {
+    text-decoration: underline;
+}
