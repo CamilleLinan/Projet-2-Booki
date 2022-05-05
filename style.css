@@ -227,6 +227,7 @@ button {
 
 .hosting_title, .hosting_popular_header_icon {
     margin: 30px 30px 20px 30px;
+    font-size: 20px;
 }
 
 .hosting_card {
@@ -245,7 +246,6 @@ button {
 
 .hosting_card_fig {
     margin: 0px;
-    overflow: hidden;
 }
 
 .hosting_card_fig_img {
@@ -367,3 +367,71 @@ button {
 /* HOSTING POPULAR */
 
 /* HOSTING */
+
+/* ACTIVITY */
+
+.activity {
+    margin-top: 60px;
+}
+
+.activity_header {
+    margin: 30px;
+}
+
+.activity_header_title {
+    font-size: 20px;
+}
+
+.activity_card {
+    border-radius: 20px;
+    margin: 0px 18px;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 16px #0000001f;
+    overflow: hidden;
+}
+
+.activity_card_fig {
+    margin: 0px;
+}
+
+.activity_card_fig_img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activity_card_fig_caption {
+    margin: 20px;
+}
+
+.container_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_medium_and_small {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container_medium_and_small_normal {
+    flex-direction: column;
+}
+
+.container_medium_and_small_reverse {
+    flex-direction: column-reverse;
+}
+
+.activity_card_fig_img_large {
+    height: 450px;
+}
+
+.activity_card_fig_img_medium {
+    height: 210px;
+}
+
+.activity_card_fig_img_small {
+    height: 140px;
+}
