@@ -1,9 +1,5 @@
 # Projet-2-v1
 
---> Ajout des media queries pour dekstop et tablette ;
+--> Ajout des media queries pour smartphone ;
 
---> Nouvelle mise en page de hosting_popular pour tablette ;
-
---> Refonte de la partie activity en HTML et CSS pour une meilleure stabilité ;
-
---> Nouvelle mise en page de activity pour tablette.
+--> Modification du header, la barre de recherche, hosting_popular, hosting_main, activity, et footer pour d'adapter aux différentes tailles d'écrans.
