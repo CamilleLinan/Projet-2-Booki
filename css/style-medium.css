@@ -1,4 +1,5 @@
-/* PAGE */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* PAGE */
 
 @font-face {
     font-family: 'Raleway-Regular';
@@ -11,18 +12,14 @@
 }
 
 html {
-    min-width: 1200px;
-    max-width: 1440px;
+    min-width: 768px;
+    max-width: 992px;
     margin: auto;
 }
 
 body {
     font-family: 'Raleway-Regular', 'Sans serif';
     margin-top: -15px;
-}
-
-main {
-    padding: 0px 15px 0px 15px;
 }
 
 a, button {
@@ -219,9 +216,10 @@ li {
 /* HOSTING */
 
 .hosting {
-    display: flex;
-    flex-direction: row;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 858px;
 }
 
 .hosting_background {
@@ -296,7 +294,7 @@ li {
 /* HOSTING MAIN */
 
 .hosting_main {
-    margin: 20px 15px 20px 0px;
+    margin: 20px 0px 20px 0px;
     flex: 2;
 }
 
@@ -332,7 +330,7 @@ li {
 /* HOSTING POPULAR */
 
 .hosting_popular {
-    margin: 20px 0px 20px 15px;
+    margin: 20px 0px 20px 0px;
     flex: 1;
 }
 
@@ -348,13 +346,13 @@ li {
 
 .hosting_popular_cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .hosting_popular_card {
-    width: 90%;
+    width: 30%;
     height: auto;
 }
 
@@ -376,25 +374,32 @@ li {
 /* ACTIVITY */
 
 .activity {
-    margin-top: 20px;
-    padding: 20px 0px 20px 0px;
+    margin: auto;
+    min-height: 830px;
 }
 
 .activity_header {
-    margin: 30px;
+    margin: 30px 0px 10px 30px;
 }
 
 .activity_header_title {
     font-size: 20px;
 }
 
+.activity_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
 .activity_card {
     border-radius: 20px;
-    margin: 0px 18px;
-    width: 90%;
+    margin: 20px;
+    width: 44%;
     height: auto;
     box-shadow: 0 0 16px #0000001f;
-    overflow: hidden;
     transition: transform 250ms ease-in-out;
 }
 
@@ -409,42 +414,16 @@ li {
 .activity_card_fig_img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
+    height: 150px;
     object-fit: cover;
 }
 
 .activity_card_fig_caption {
-    margin: 20px;
+    margin-left: 20px;
 }
 
-.container_main {
-    display: flex;
-    justify-content: space-around;
-}
-
-.container_medium_and_small {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.container_medium_and_small_normal {
-    flex-direction: column;
-}
-
-.container_medium_and_small_reverse {
-    flex-direction: column-reverse;
-}
-
-.activity_card_fig_img_large {
-    height: 450px;
-}
-
-.activity_card_fig_img_medium {
-    height: 210px;
-}
-
-.activity_card_fig_img_small {
-    height: 140px;
+.activity_card_fig_caption_title {
+    font-size: 16px;
 }
 
 /* ACTIVITY */
@@ -453,7 +432,8 @@ li {
 
 .footer {
     background-color: #F2F2F2;
-    margin-top: 100px;
+    margin: 50px -10px 0px -10px;
+    margin-bottom: -10px;
     padding-top: 10px;
 }
 
@@ -479,4 +459,5 @@ li {
 
 .footer_main_list li:hover {
     text-decoration: underline;
+}
 }
