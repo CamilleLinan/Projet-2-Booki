@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-medium.css" />
+    <link rel="stylesheet" href="css/style-small.css" />
     <script src="https://kit.fontawesome.com/427a8b27ad.js" crossorigin="anonymous"></script>
     <title>Booki - Trouvez vos vacances</title>
 </head>
@@ -11,7 +12,7 @@
 <body>
 <!-- HEADER -->
     <header class="header">
-        <img src="images/logo/Booki.png" alt="logo-booki" class="header_img" />
+        <img src="images/logo/Booki@3x.png" alt="logo-booki" class="header_img" />
         <nav class="header_nav">
             <a href="#hosting" class="header_nav_link header_nav_link_hosting">Hébergements</a>
             <a href="#activity" class="header_nav_link header_nav_link_activity">Activités</a>
@@ -31,7 +32,10 @@
             <form class="search_form" method="GET" action="#">
                 <div class="search_form_icon"><i class="fa-solid fa-location-dot"></i></div>
                 <input class="search_form_searchinput" type="search" placeholder="Marseille, France" />
-                <button class="search_form_submitinput">Rechercher</button>
+                <button class="search_form_submitinput">
+                    <label class="search_form_submitinput_text">Rechercher</label>
+                    <i class="fa-solid fa-magnifying-glass search_text_icon" aria-hidden="true"></i>
+                </button>
             </form>
 
             <div class="search_filters">
