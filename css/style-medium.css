@@ -16,7 +16,7 @@ html {
 }
 
 .search_filters_filter {
-    margin: 0px 15px;
+    margin: 5px 15px;
 }
 
 /* FILTERS */
@@ -60,7 +60,7 @@ html {
 /* ACTIVITY */
 
 .activity {
-    margin: auto;
+    margin: 0;
 }
 
 .activity_header {
@@ -68,9 +68,8 @@ html {
 }
 
 .activity_cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
+    flex-flow: row wrap;
+    height: auto;
 }
 
 .activity_card {
@@ -88,40 +87,5 @@ html {
 }
 
 /* ACTIVITY */
-
-/* FOOTER */
-
-.footer {
-    background-color: #F2F2F2;
-    margin-top: 50px;
-    margin-bottom: -10px;
-    padding-top: 10px;
-}
-
-.footer_main {
-    display: flex;
-    padding: 20px 0px 5px 15px; 
-}
-
-.footer_main_container {
-    margin-left: 30px;
-}
-
-.footer_main_title {
-    margin: 0px;
-    padding-left: 40px;
-    font-size: 14px;
-}
-
-.footer_main_list {
-    font-size: 12px;
-    line-height: 30px;
-}
-
-.footer_main_list li:hover {
-    text-decoration: underline;
-}
-
-/* FOOTER */
 
 }
