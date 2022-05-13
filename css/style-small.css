@@ -34,16 +34,8 @@ main {
 .header_nav_link {
     width: 100%;
     padding: 25px;
-}
-    
-.header_nav_link_hosting {
     border-top: transparent;
-    border-bottom: 3px solid #0065FC;
-}
-    
-.header_nav_link_activity {
-    border-top: transparent;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid #F2F2F2;
 }
     
 .header_nav_link:hover {

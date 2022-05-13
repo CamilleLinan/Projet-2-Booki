@@ -70,17 +70,9 @@ li {
 
 .header_nav_link {
     width: 120px;
-    padding: 30px ;
+    padding: 30px;
     text-align: center;
     font-weight: 500;
-}
-
-.header_nav_link_hosting {
-    color: #0065FC;
-    border-top: 4px solid #0065FC;
-}
-
-.header_nav_link_activity {
     border-top: 4px solid transparent;
 }
 
