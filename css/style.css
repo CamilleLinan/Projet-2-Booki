@@ -125,6 +125,10 @@ li {
     border-radius: 15px 0px 0px 15px;
 }
 
+.fa-location-dot {
+    padding-left: 3px;
+}
+
 .search_form_searchinput {
     border: 2px solid #F2F2F2;
     padding-left: 15px;
