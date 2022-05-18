@@ -6,7 +6,17 @@ html {
     max-width: 992px;
 }
 
+main {
+    padding: 5px;
+}
+
 /* PAGE */
+
+/* SEARCH */
+
+.search {
+    padding: 0px 15px 0px 15px;
+}
 
 /* FILTERS */
 
@@ -24,6 +34,10 @@ html {
 
 .hosting {
     flex-direction: column-reverse;
+}
+
+.hosting_card {
+    margin: 10px;
 }
 
 /* HOSTING POPULAR */
@@ -49,7 +63,11 @@ html {
 }
 
 .hosting_main_card {
-    width: 45%;
+    width: 47%;
+}
+
+.hosting_main_card_fig_img {
+    height: 140px;
 }
 
 /* HOSTING MAIN */
@@ -72,13 +90,13 @@ html {
 }
 
 .activity_card {
-    margin: 20px;
-    width: 44%;
+    margin: 10px;
+    width: 47%;
     height: auto;
 }
 
 .activity_card_fig_img {
-    height: 150px;
+    height: 140px;
 }
 
 .activity_card_fig_caption {

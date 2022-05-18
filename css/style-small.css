@@ -3,12 +3,13 @@
 /* PAGE */
     
 html {
-    min-width: 505px;
+    min-width: 450px;
     max-width: 768px;
+    margin: 0;
 }
 
 main {
-    padding: 0px 5px 0px 5px;
+    padding: 0;
 }
     
 /* PAGE */
@@ -23,7 +24,7 @@ main {
 .header_img {
     margin: auto;
     width: 150px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
     
 .header_nav {
@@ -46,7 +47,12 @@ main {
 /* HEADER */
     
 /* SEARCH */
-    
+
+.search {
+    padding: 0px 15px 0px 15px;
+    margin: auto;
+}
+
 .search_header {
     margin-top: 30px;
 }
@@ -54,18 +60,23 @@ main {
 /* SEARCH */
     
 /* FORM */
-    
+
+.search_form {
+    justify-content: center;
+    width: 100%;
+}
+
 .search_form_icon {
-    width: 40px;
+    width: 50px;
 }
 
 .search_form_searchinput {
-    width: 255px;
+    width: 100%;
 }
     
 .search_form_submitinput {
     border-radius: 15px;
-    width: 55px;
+    width: 60px;
 }
 
 .search_form_submitinput_text {
@@ -81,9 +92,12 @@ main {
 /* FILTERS */
     
 .search_filters {
-    margin: 20px 0px 10px 0px;
+    margin: 5px 0px 10px 0px;
 }
-    
+.search_filters_title {
+    width: 100%;
+}
+
 .search_filters_filter {
     margin: 5px 15px;
 }
@@ -94,6 +108,18 @@ main {
     
 .hosting {
     flex-direction: column-reverse;
+}
+
+.hosting_background {
+    border-radius: 0;
+}
+
+.hosting_card {
+    margin: 10px;
+}
+
+.hosting_card:hover {
+    transform: scale(1.02);
 }
 
 /* HOSTING POPULAR */
@@ -107,7 +133,7 @@ main {
 }
 
 .hosting_popular_card_fig_img {
-    height: 120px;
+    height: 130px;
 }
     
 /* HOSTING POPULAR */
@@ -115,7 +141,9 @@ main {
 /* HOSTING MAIN */
     
 .hosting_main {
-    margin: 20px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
+    background-color: white;
+    border: none;
 }
     
 .hosting_main_card {
@@ -123,7 +151,7 @@ main {
 }
     
 .hosting_main_card_fig_img {
-    height: 150px;
+    height: 175px;
 }
     
 /* HOSTING MAIN */
@@ -132,12 +160,8 @@ main {
     
 /* ACTIVITY */
     
-.activity {
-    margin: auto;
-}
-    
 .activity_header {
-    margin: 50px 0px 10px 30px;
+    margin: 0px 0px 10px 30px;
 }
     
 .activity_cards {
@@ -146,12 +170,16 @@ main {
 }
     
 .activity_card {
-    margin: 20px;
+    margin: 10px;
     width: 95%;
 }
-    
+
+.activity_card:hover {
+    transform: scale(1.02);
+}
+
 .activity_card_fig_img {
-    height: 150px;
+    height: 170px;
 }
     
 .activity_card_fig_caption {
