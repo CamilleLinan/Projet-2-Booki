@@ -12,6 +12,6 @@ Créer un prototype de site en intégrant la maquette conçue par le designer UI
 HTML5 / CSS3
 
 
-Voir le site web : https://camillelinan.github.io/Projet-2-Booki/
+Voir le site web : https://camillelinan.github.io/Projet-2-Booki/ <br/>
 Plus d'informations sur mon portfolio : https://camillelinan.com/project/Booki
 
